@@ -118,7 +118,8 @@ when switch is in OFF state:
 
 when switch is in ON state: 
 
-![pmc exp 3 3](https://user-images.githubusercontent.com/119643767/235076359-d3c01872-b581-4cad-ab15-01cedcba7f70.jpg)
+![pmc exp 3 3](https://user-images.githubusercontent.com/119643767/235077294-bbac2197-cced-43de-b554-d34280a8086f.jpg)
+
 
 
 
