@@ -71,36 +71,14 @@ We are now at the last part of step by step guide on how to simulate STM32 proje
 
 
 ## STM 32 CUBE PROGRAM :
-
 ```
-#include "main.h"
-#include "stdio.h"
-#include "stdbool.h"
-bool pushbutton;
-void SystemClock_Config(void);
-static void MX_GPIO_Init(void);
-int main(void)
 {
-  HAL_Init();
-  SystemClock_Config();
-  MX_GPIO_Init();
-  while (1)
-  {
-	  pushbutton = HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_4);
-	  	  if (pushbutton == 0)
-	  	    {
-	  		  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_5,GPIO_PIN_SET);
-	  		  HAL_Delay(250);
-	  		  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_5,GPIO_PIN_RESET);
-	  		  HAL_Delay(250);
-	  	    }
-	  	  else
-	  		{
-	  		  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_5,GPIO_PIN_RESET);
-	  		  HAL_Delay(500);
-	  		}
+	  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
+	  HAL_Delay(500);
+	  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
+	  HAL_Delay(500);
   }
-}
+
 programmed by:s. Murali
 Register no.:212222230088
 ```
@@ -111,14 +89,16 @@ Register no.:212222230088
 
 
 when switch is in OFF state:
+![pro micro 03 exp 3 - Copy](https://user-images.githubusercontent.com/119643767/235171518-48af3875-04ee-44a3-8ad4-21885a2605fe.png)
 
-![pmc exp 3 4](https://user-images.githubusercontent.com/119643767/235076675-3b5d884e-5176-49ea-a9d8-18d4a9353832.jpg)
+
+
 
 
 
 when switch is in ON state: 
 
-![pmc exp 3 3](https://user-images.githubusercontent.com/119643767/235077294-bbac2197-cced-43de-b554-d34280a8086f.jpg)
+![pro micro 03 exp 02  on - Copy](https://user-images.githubusercontent.com/119643767/235171651-7603532e-1859-4104-8fb5-4342a83c2e01.png)
 
 
 
@@ -126,7 +106,7 @@ when switch is in ON state:
 
 ## Proteus layout(Add pdf screen shot of circuit here)
  
- ![pmc exp 3 5](https://user-images.githubusercontent.com/119643767/235076771-cfbe535f-2eee-45d8-b6c6-c2ad8b50ab60.jpg)
+ !
 
  
  
